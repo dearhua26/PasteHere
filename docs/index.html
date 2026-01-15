@@ -127,6 +127,44 @@
             border-left: 4px solid #22c55e;
         }
 
+        /* Usage Steps */
+        .usage {
+            margin-bottom: 4rem;
+        }
+
+        .steps {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .step {
+            flex: 1;
+            min-width: 250px;
+            text-align: left;
+            background: rgba(255, 255, 255, 0.03);
+            padding: 2rem;
+            border-radius: 1rem;
+            position: relative;
+            border: 1px solid var(--border);
+        }
+
+        .step-number {
+            font-size: 4rem;
+            font-weight: bold;
+            color: rgba(255, 255, 255, 0.05);
+            position: absolute;
+            top: 0;
+            right: 1.5rem;
+            line-height: 1;
+        }
+
+        .step h3 {
+            margin-top: 0.5rem;
+            color: var(--accent);
+        }
+
         /* Features */
         .features {
             display: grid;
@@ -153,10 +191,34 @@
             display: block;
         }
 
+        /* CTA Section */
+        .cta {
+            margin-bottom: 4rem;
+        }
+
+        .github-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: #24292e;
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: background 0.2s;
+        }
+
+        .github-btn:hover {
+            background: #2f363d;
+        }
+
         footer {
             margin-top: 4rem;
             color: #64748b;
             font-size: 0.9rem;
+            padding-bottom: 2rem;
         }
 
         @keyframes fadeIn {
@@ -213,7 +275,7 @@
                 <br>
                 <p><i>Done. The file is right where you need it.</i></p>
                 <br>
-                <small style="color:#22c55e">Friction: Zero</small>
+                <small style="color:#22c55e">Friction: One Click</small>
             </div>
         </section>
 
@@ -235,8 +297,39 @@
             </div>
         </section>
 
+        <section class="usage">
+            <h2>🚀 How to Use</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Install</h3>
+                    <p>Double-click <b>PasteHere.exe</b> once. Click "Yes" to register the menu.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Copy</h3>
+                    <p>Copy any Image (Web/Screenshot), Text, or File URL.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Paste Here</h3>
+                    <p>Right-click inside your target folder and select <b>"Paste Here"</b>.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta">
+            <p style="font-size: 1.2rem; color: #cbd5e1; margin-bottom: 1.5rem;">
+                Found this useful? <b>Awesome people Star the projects they love.</b>
+            </p>
+            <a href="https://github.com/santa1115/PasteHere" class="github-btn">
+                <span>⭐ Star on GitHub</span>
+            </a>
+        </section>
+
         <footer>
             <p>Open Source Project. MIT License.</p>
+            <p style="margin-top: 0.5rem; color: #94a3b8;">Created by <b>Hua</b></p>
         </footer>
     </div>
 </body>
